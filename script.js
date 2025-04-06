@@ -16,6 +16,7 @@ function targetRandomKey() {
 }
 
 document.addEventListener("keydown", (e) => {
+  
   const keyPressed = e.key.toUpperCase();
   const keyElement = document.getElementById(keyPressed);
   const highlightedKey = document.querySelector(".selected");

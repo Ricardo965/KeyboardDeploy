@@ -16,7 +16,6 @@ pipeline {
                   usernameVariable: 'SSH_USER',
                   passwordVariable: 'SSH_PASSWORD'
               )]) {
-                  sh 'echo "Credenciales: $SSH_USER / $SSH_PASSWORD"'
                   sh """
                       # Instalar sshpass si no está presente (requiere sudo)
                       which sshpass || (sudo apt-get update && sudo apt-get install -y sshpass)

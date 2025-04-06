@@ -21,10 +21,10 @@ pipeline {
                       which sshpass || (sudo apt-get update && sudo apt-get install -y sshpass)
                       
                       # Copiar archivos al servidor remoto
-                      sshpass -p "$SSH_PASSWORD" scp -o StrictHostKeyChecking=no -r * ${SSH_USER}@${NGINX_IP}:/tmp/web-deploy/
+                      sshpass -p '$SSH_PASSWORD' scp -o StrictHostKeyChecking=no -r * ${SSH_USER}@${NGINX_IP}:/tmp/web-deploy/
                       
                       # Ejecutar comandos remotos (mejor formato)
-                      sshpass -p "$SSH_PASSWORD" ssh -tt ${SSH_USER}@${NGINX_IP} "
+                      sshpass -p '$SSH_PASSWORD' ssh -tt ${SSH_USER}@${NGINX_IP} "
                           sudo rm -rf /var/www/html/KeyboardDeploy/* &&
                           sudo cp -r /tmp/web-deploy/* /var/www/html/KeyboardDeploy/
                       "

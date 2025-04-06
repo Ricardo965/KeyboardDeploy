@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-        NGINX_IP = ${env.NGINX_IP}
+        NGINX_IP = "${env.NGINX_IP}"
   }
   stages {
     stage('Hola GitHub') {

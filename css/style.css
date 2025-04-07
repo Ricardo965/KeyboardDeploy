@@ -64,48 +64,48 @@ li {
   width: 5em;
 }
 .pinky {
-  background-color: #0077b6; /* azul fuerte */
-  border: 2px solid #0077b6;
+  background-color: crimson;
+  border: 2px solid crimson;
 }
 
 .pinky.selected {
-  color: #0077b6;
+  color: crimson;
 }
 
 .ring {
-  background-color: #0096c7;
-  border: 2px solid #0096c7;
+  background-color: coral;
+  border: 2px solid coral;
 }
 
 .ring.selected {
-  color: #0096c7;
+  color: coral;
 }
 
 .middle {
-  background-color: #00b4d8;
-  border: 2px solid #00b4d8;
+  background-color: darkorange;
+  border: 2px solid darkorange;
 }
 
 .middle.selected {
-  color: #00b4d8;
+  color: darkorange;
 }
 
 .pointer1st {
-  background-color: #48cae4;
-  border: 2px solid #48cae4;
+  background-color: gold;
+  border: 2px solid gold;
 }
 
 .pointer1st.selected {
-  color: #48cae4;
+  color: gold;
 }
 
 .pointer2nd {
-  background-color: #90e0ef;
-  border: 2px solid #90e0ef;
+  background-color: khaki;
+  border: 2px solid khaki;
 }
 
 .pointer2nd.selected {
-  color: #90e0ef;
+  color: khaki;
 }
 
 .fill-out-key {

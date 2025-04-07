@@ -4,11 +4,13 @@ pipeline {
         NGINX_IP = "${env.NGINX_IP}"
   }
   stages {
+
     stage('Hola GitHub') {
       steps {
         echo "✅ Webhook recibido desde GitHub 🎉"
       }
     }
+    
     stage('SonarQube analysis') {
       steps {
         script {

@@ -63,49 +63,51 @@ li {
 .barra {
   width: 5em;
 }
+
+/* Sustituimos los colores cálidos por azules fríos */
 .pinky {
-  background-color: crimson;
-  border: 2px solid crimson;
+  background-color: #4169e1; /* royalblue */
+  border: 2px solid #4169e1;
 }
 
 .pinky.selected {
-  color: crimson;
+  color: #4169e1;
 }
 
 .ring {
-  background-color: coral;
-  border: 2px solid coral;
+  background-color: #1e90ff; /* dodgerblue */
+  border: 2px solid #1e90ff;
 }
 
 .ring.selected {
-  color: coral;
+  color: #1e90ff;
 }
 
 .middle {
-  background-color: darkorange;
-  border: 2px solid darkorange;
+  background-color: #00bfff; /* deepskyblue */
+  border: 2px solid #00bfff;
 }
 
 .middle.selected {
-  color: darkorange;
+  color: #00bfff;
 }
 
 .pointer1st {
-  background-color: gold;
-  border: 2px solid gold;
+  background-color: #87cefa; /* lightskyblue */
+  border: 2px solid #87cefa;
 }
 
 .pointer1st.selected {
-  color: gold;
+  color: #87cefa;
 }
 
 .pointer2nd {
-  background-color: khaki;
-  border: 2px solid khaki;
+  background-color: #b0e0e6; /* powderblue */
+  border: 2px solid #b0e0e6;
 }
 
 .pointer2nd.selected {
-  color: khaki;
+  color: #b0e0e6;
 }
 
 .fill-out-key {
@@ -121,6 +123,7 @@ li {
 .hit {
   animation: hit 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
+
 @keyframes hit {
   0% {
     transform: scale(1.2);
@@ -129,6 +132,7 @@ li {
     transform: scale(1);
   }
 }
+
 @keyframes vibrate-1 {
   0% {
     transform: translate(0);
@@ -148,4 +152,4 @@ li {
   100% {
     transform: translate(0);
   }
-} /*# sourceMappingURL=style.css.map */
+}
